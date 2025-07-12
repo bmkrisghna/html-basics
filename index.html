@@ -1,1 +1,41 @@
-after creating download live server to compile in new crome browser
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Form</title>
+</head>
+<body>
+  <h2>User Details </h2>
+
+  <form style="display: flex; flex-direction: column; gap: 10px; max-width: 400px;">
+    <div style="display: flex; align-items: center; gap: 10px;">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name">
+    </div>
+      <div style="display: flex; align-items: center; gap: 10px;">
+      <label>Gender:</label>
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label>
+      </div>
+    <div style="display: flex; align-items: center; gap: 10px;">
+      <label for="email">Email:</label>
+      <input type="email" id="Gmail" name="Gmail" placeholder="name@gmail.com">
+    </div>
+    <div style="display: flex; align-items: center; gap: 10px;">
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password" placeholder="Enter Password">
+  <input type="checkbox" onclick="togglePassword()"> Show
+</div>
+    <div style="display: flex; flex-direction: column;">
+      <label for="comments">Comments:</label>
+      <textarea id="comments" name="comments" rows="4" cols="40" placeholder=" comment here what you want..."></textarea>
+    </div>
+    <div>
+      <input type="submit" value="Submit">    <input type="reset" value="reset">
+    </div>
+
+  </form>
+
+</body>
+</html>
